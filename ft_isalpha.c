@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 16:51:10 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/17 12:49:12 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/18 15:48:28 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ int	ft_isalpha(int arg)
 {
 	if ((arg >= 'a' && arg <= 'z') || (arg >= 'A' && arg <= 'Z'))
 		return (1);
-	else 
+	else
 		return (0);
 }

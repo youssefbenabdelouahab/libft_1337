@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 12:52:14 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/18 13:59:58 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/18 16:41:20 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+#include <stdint.h>
 # include <unistd.h>
 # include <string.h>
 

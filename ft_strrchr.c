@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 13:14:09 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/17 12:50:21 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/18 16:30:56 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ char	*ft_strrchr(const char *s, int c)
 	last = NULL;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			last = (char *)&s[i];
 		i++;
 	}
-	if (s[i] == c)
+	if (s[i] == (char)c)
 		last = (char *)&s[i];
 	return (last);
 }

@@ -6,13 +6,13 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 13:59:25 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/18 13:59:47 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/18 16:22:06 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+// # include "libft.h"
 
-char	**ft_split(char const *s, char c)
-{
+// char	**ft_split(char const *s, char c)
+// {
 
-}
+// }

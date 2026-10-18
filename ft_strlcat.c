@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 12:35:55 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/17 12:50:00 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/18 15:35:06 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 		i++;
 		j++;
 	}
+	dst[j] = '\0';
 	return (src_len + dst_len);
 }

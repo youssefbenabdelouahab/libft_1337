@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 19:26:10 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/18 12:51:54 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/18 16:21:35 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_atoi(const char *str)
 				return (0);
 		}
 		res = res * 10 + (*str - '0');
-		*str++;
+		str++;
 	}
 	return ((int)(res * sign));
 }

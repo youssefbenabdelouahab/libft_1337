@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:11:22 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/17 12:49:29 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/18 15:47:47 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	str = (unsigned char *)s;
 	while (i < n)
 	{
-		if (str[i] == c)
+		if (str[i] == (unsigned char) c)
 			return ((unsigned char *)&str[i]);
 		i++;
 	}
