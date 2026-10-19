@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 13:59:25 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/19 13:40:06 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/19 21:23:13 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,19 +58,16 @@ static void	ft_free(char **str, int x)
 	int	i;
 
 	i = 0;
-	if (str[x] == NULL)
+	while (i < x)
 	{
-		while (i < x)
-		{
-			free(str[i]);
-			i++;
-		}
-		free(str);
-		return ;
+		free(str[i]);
+		i++;
 	}
+	free(str);
+	return ;
 }
 
-static	void	ft_remplir(char **str, char const *s, int nbr_words, char c)
+static	int	ft_remplir(char **str, char const *s, char c)
 {
 	int	i;
 	int	j;
@@ -83,18 +80,20 @@ static	void	ft_remplir(char **str, char const *s, int nbr_words, char c)
 		if (s[i] != c)
 		{
 			len = count_len(s, c, i);
-			if (j < nbr_words)
+			str[j] = ft_substr(s, i, len);
+			if (!str[j])
 			{
-				str[j] = ft_substr(s, i, len);
 				ft_free(str, j);
-				j++;
+				return (0);
 			}
+			j++;
 			i += len;
 		}
 		else
 			i++;
 	}
 	str[j] = NULL;
+	return (1);
 }
 
 char	**ft_split(char const *s, char c)
@@ -102,8 +101,13 @@ char	**ft_split(char const *s, char c)
 	char	**str;
 	int		nbr_words;
 
+	if (s == NULL)
+		return (NULL);
 	nbr_words = count_words(s, c);
 	str = malloc(sizeof(char *) * (nbr_words + 1));
-	ft_remplir(str, s, nbr_words, c);
+	if (str == NULL)
+		return (NULL);
+	if (!ft_remplir(str, s, c))
+		return (NULL);
 	return (str);
 }
