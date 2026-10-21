@@ -6,12 +6,11 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 19:26:10 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/18 16:21:35 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/21 14:05:15 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <limits.h>
 
 int	ft_atoi(const char *str)
 {
