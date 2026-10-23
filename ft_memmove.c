@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:41:40 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/17 12:49:42 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/23 21:30:22 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	if (!dst && !src)
 		return (NULL);
+	if (len == 0 || dst == src)
+		return (dst);
 	s1 = (unsigned char *)dst;
 	s2 = (const unsigned char *)src;
 	if (s1 < s2)

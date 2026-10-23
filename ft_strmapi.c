@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 16:56:47 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/18 17:20:47 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/23 22:09:39 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		len;
 	int		i;
 
-	if (s == NULL)
+	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s);
 	s1 = malloc(len + 1);

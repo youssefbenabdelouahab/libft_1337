@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 13:42:29 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/17 17:22:25 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/23 21:37:41 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		i;
 	int		j;
 
+	if (!s1 || !set)
+		return (NULL);
 	len = len_cal(s1, set);
 	s2 = malloc(len + 1);
 	if (s2 == NULL)

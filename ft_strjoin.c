@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 13:32:22 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/17 13:41:55 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/23 22:02:53 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		len_s2;
 	char	*s3;
 
+	if (!s1 || !s2)
+		return (NULL);
 	len_s1 = ft_strlen(s1);
 	len_s2 = ft_strlen(s2);
 	s3 = malloc(len_s1 + len_s2 + 1);
