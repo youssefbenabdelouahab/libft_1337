@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 12:02:57 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/25 11:34:43 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/25 11:59:42 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,4 +53,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (lst1);
 }
- 

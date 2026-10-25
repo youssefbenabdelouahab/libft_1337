@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 13:32:22 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/23 22:02:53 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/25 12:00:38 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	j = 0;
 	while (j < len_s2)
-	{
 		s3[i++] = s2[j++];
-	}
 	s3[i] = '\0';
 	return (s3);
 }
