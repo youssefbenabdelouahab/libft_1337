@@ -14,7 +14,7 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)

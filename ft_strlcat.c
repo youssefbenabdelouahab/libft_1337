@@ -6,7 +6,7 @@
 /*   By: yben-abd <yben-abd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 12:35:55 by yben-abd          #+#    #+#             */
-/*   Updated: 2026/10/23 21:23:45 by yben-abd         ###   ########.fr       */
+/*   Updated: 2026/10/25 11:50:06 by yben-abd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	dst_len;
 
 	src_len = ft_strlen(src);
+	if (dstsize == 0)
+		return (src_len);
 	dst_len = ft_strlen(dst);
 	i = 0;
 	j = dst_len;
