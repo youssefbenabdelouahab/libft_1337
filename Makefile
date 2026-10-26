@@ -18,7 +18,7 @@ all: $(NAME)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
-	ar -rcs $(NAME) $(OBJ)
+	ar -rc $(NAME) $(OBJ)
 
 clean :
 	rm -f $(OBJ)
